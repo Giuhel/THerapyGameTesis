@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.Letras3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/idLayoutFondoL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="8dp">
+
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:src="@drawable/logo_mini2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABECEDARIO"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlanco"
+                android:textSize="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro"
+            android:textSize="20dp"
+            android:text="Presiona las letras"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/letras3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgR"
+                    android:layout_width="120dp"
+                    android:layout_height="119dp"
+                    android:background="@drawable/sinfondo"/>
+
+                <ImageButton
+                    android:id="@+id/imgS"
+                    android:layout_width="105dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/sinfondo"
+                    android:layout_marginLeft="25dp"/>
+
+                <ImageButton
+                    android:id="@+id/imgT"
+                    android:layout_width="120dp"
+                    android:layout_height="115dp"
+                    android:background="@drawable/sinfondo"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/imgU"
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/sinfondo"/>
+
+                <ImageButton
+                    android:id="@+id/imgV"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/sinfondo"
+                    android:layout_marginLeft="25dp"/>
+
+                <ImageButton
+                    android:id="@+id/imgW"
+                    android:layout_width="115dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/sinfondo"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/imgX"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/sinfondo"/>
+
+                <ImageButton
+                    android:id="@+id/imgY"
+                    android:layout_width="115dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/sinfondo"
+                    android:layout_marginLeft="25dp"/>
+
+                <ImageButton
+                    android:id="@+id/imgZ"
+                    android:layout_width="115dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/sinfondo"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnHomeL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorNaranja"
+            android:text="SALIR"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

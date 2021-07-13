@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.helio.therapygame.actividades.LetraEscondidaActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/idLayoutFondoL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="8dp">
+
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:src="@drawable/logo_mini2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pon Atención a la letra"
+                android:textColor="@color/colorBlanco"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encuentra y selecciona la Letra:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorRojo"/>
+
+        <LinearLayout
+            android:id="@+id/layoutLetras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:background="#6AEEFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tgbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="A"
+                android:textOn="A"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorMarron"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="K"
+                android:textOn="K"
+                android:textStyle="bold"
+                android:textColor="@color/colorRojo"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco" />
+
+            <ToggleButton
+                android:id="@+id/tgbtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="P"
+                android:textOn="P"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorAzul"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="K"
+                android:textOn="K"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorRojo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tgbtn5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="A"
+                android:textOn="A"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorMarron"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="Q"
+                android:textOn="Q"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorAbeto"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="K"
+                android:textOn="K"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorRojo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="Z"
+                android:textOn="Z"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorAzulOscuro"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tgbtn9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="W"
+                android:textOn="W"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorFinal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="T"
+                android:textOn="T"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorFucsia"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="Y"
+                android:textOn="Y"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorNegro"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="Y"
+                android:textOn="Y"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorNegro"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tgbtn13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="O"
+                android:textOn="O"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorTeja"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="K"
+                android:textOn="K"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorRojo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="A"
+                android:textOn="A"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorMarron"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+            <ToggleButton
+                android:id="@+id/tgbtn16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textOff="Q"
+                android:textOn="Q"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorAbeto"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlanco"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="6dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/tgbtn17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textOff="P"
+                    android:textOn="P"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAzul"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorBlanco"/>
+
+                <ToggleButton
+                    android:id="@+id/tgbtn18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textOff="C"
+                    android:textOn="C"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorVerdeLima"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorBlanco"/>
+
+                <ToggleButton
+                    android:id="@+id/tgbtn19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textOff="K"
+                    android:textOn="K"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorRojo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorBlanco"/>
+
+
+                <ToggleButton
+                    android:id="@+id/tgbtn20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textOff="V"
+                    android:textOn="V"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAmarrillo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorBlanco"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProcesar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verificar"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlanco"
+            android:background="@color/colorRojo"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

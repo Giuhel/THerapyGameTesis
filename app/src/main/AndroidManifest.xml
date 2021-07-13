@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.helio.therapygame">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icono"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".actividades.Letras3Activity"></activity>
+        <activity android:name=".actividades.Letras2Activity" />
+        <activity android:name=".actividades.LetrasActivity" />
+        <activity android:name=".actividades.ColoresActivity" />
+        <activity android:name=".actividades.cantidad3Activity" />
+        <activity android:name=".actividades.cantidad2Activity" />
+        <activity android:name=".actividades.cantidadActivity" />
+        <activity android:name=".actividades.Razonamiento4Activity" />
+        <activity android:name=".actividades.Razonamiento3Activity" />
+        <activity android:name=".actividades.Razonamiento2Activity" />
+        <activity android:name=".actividades.RazonamientoActivity" />
+        <activity android:name=".actividades.Memorama" />
+        <activity android:name=".actividades.Memorama2" />
+        <activity android:name=".actividades.Memorama3" />
+        <activity android:name=".actividades.LetraEscondidaActivity" />
+        <activity
+            android:name=".actividades.AcercaDeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actividades.AjustesTemaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actividades.Nivel2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actividades.ResultadoJuegoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actividades.AjustesActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.helio.therapygame.MainActivity" />
+        </activity>
+        <activity
+            android:name=".actividades.Nivel1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actividades.ContendorInstruccionesActivity"
+            android:label="@string/title_activity_contendor_instrucciones"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

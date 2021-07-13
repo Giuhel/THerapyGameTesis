@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/idLayoutFondoM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:src="@drawable/logo_mini2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pon a Prueba tu Memoria"
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/fondotable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorAccent">
+
+        //FILA 1
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn00"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="0"/>
+            <ImageButton
+                android:id="@+id/btn01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <ImageButton
+                android:id="@+id/btn02"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="2"/>
+            <ImageButton
+                android:id="@+id/btn03"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="3"/>
+
+        </TableRow>
+
+        //FILA 2
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/btn04"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="0"/>
+            <ImageButton
+                android:id="@+id/btn05"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <ImageButton
+                android:id="@+id/btn06"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="2"/>
+            <ImageButton
+                android:id="@+id/btn07"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="3"/>
+
+        </TableRow>
+
+        //FILA 3
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/btn08"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="0"/>
+            <ImageButton
+                android:id="@+id/btn09"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <ImageButton
+                android:id="@+id/btn10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="2"/>
+            <ImageButton
+                android:id="@+id/btn11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="3"/>
+
+        </TableRow>
+
+        //FILA 4
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/btn12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="0"/>
+            <ImageButton
+                android:id="@+id/btn13"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <ImageButton
+                android:id="@+id/btn14"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="2"/>
+            <ImageButton
+                android:id="@+id/btn15"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_column="3"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puntaje:  "
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/txtpuntajeM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="20dp"
+            android:textColor="@color/colorNegro"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correctas:  "
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/txtCorrectasM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="20dp"
+            android:textColor="@color/colorAzul"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incorrectas:  "
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/txtInCorrectasM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="20dp"
+            android:textColor="@color/colorRojo"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</LinearLayout>

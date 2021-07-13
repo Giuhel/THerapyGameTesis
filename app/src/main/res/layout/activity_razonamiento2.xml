@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.helio.therapygame.actividades.Razonamiento2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/idLayoutFondoL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="8dp">
+
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:src="@drawable/logo_mini2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Razonamiento 2"
+                android:textColor="@color/colorBlanco"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coloca los números y resulve las sumas"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorNegro"/>
+
+        <TextView
+            android:id="@+id/intentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tequedan 3 Intentos"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorNegro"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/pera"/>
+
+            <TextView
+                android:id="@+id/pera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="=2"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/fresa"/>
+
+            <TextView
+                android:id="@+id/fresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="=3"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/frambuesa"/>
+
+            <TextView
+                android:id="@+id/frambuesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="=1"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/separadorId"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorNegro"
+            android:text="Suma 1"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/frambuesa"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textStyle="bold"
+                android:textColor="@color/colorNegro"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/fresa"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textStyle="bold"
+                android:textColor="@color/colorNegro"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/pera"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textStyle="bold"
+                android:textColor="@color/colorNegro"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultado?"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorNegro"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/txtnum1sum1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="numero"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/txtnum2sum1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="numero"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="18dp"/>
+
+            <EditText
+                android:id="@+id/txtnum3sum1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="numero"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="15dp"/>
+
+
+            <EditText
+                android:id="@+id/txtresultadoSum1"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="resultado"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="25dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/separadorId2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorNegro"
+            android:text="Suma 2"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/pera"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textStyle="bold"
+                android:textColor="@color/colorNegro"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/frambuesa"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textStyle="bold"
+                android:textColor="@color/colorNegro"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/pera"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textStyle="bold"
+                android:textColor="@color/colorNegro"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultado?"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorNegro"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/txtnum1sum2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="numero"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/txtnum2sum2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="numero"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="18dp"/>
+
+            <EditText
+                android:id="@+id/txtnum3sum2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="numero"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="15dp"/>
+
+
+            <EditText
+                android:id="@+id/txtresultadoSum2"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="resultado"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="25dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnverificaR2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Verificar"
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/colorRojo"/>
+    </LinearLayout>
+
+</RelativeLayout>
