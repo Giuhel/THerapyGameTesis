@@ -178,8 +178,8 @@ public class RankigFragment extends Fragment {
 
         //consultarResultador("select j.id,j.nombre,j.genero,j.avatar,p.puntos,p.nivel,p.modo from "+
           //      utilidades.TABLA_JUGADOR+ " j,"+utilidades.TABLA_PUNTAJE+ " p where j.id=p.id and j.id="+ PreferenciasJuego.jugadorId);
-
-        cargarWebService("https://therapygame.000webhostapp.com/TGwebService/Rankingjugadoractual.php?id="+ PreferenciasJuego.jugadorId);
+        String ip=getString(R.string.ip);
+        cargarWebService(ip+"/TGwebService/Rankingjugadoractual.php?id="+ PreferenciasJuego.jugadorId);
 
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override

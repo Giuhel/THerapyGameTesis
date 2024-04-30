@@ -152,7 +152,8 @@ public class utilidades{
     }*/
 
     public static void consultarListajugadores2(int id){
-        String Url="https://therapygame.000webhostapp.com/TGwebService/buscaJugador.php?id="+id;
+        String Url="https://therapy-game.000webhostapp.com/TGwebService/buscaJugador.php?id="+id;
+        //String Url="http://192.168.1.47/TGwebService/buscaJugador.php?id="+id;
         jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, Url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {

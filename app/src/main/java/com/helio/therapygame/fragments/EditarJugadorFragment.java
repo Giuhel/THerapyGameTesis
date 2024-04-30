@@ -155,8 +155,6 @@ public class EditarJugadorFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 actualizarwebService();
-
-
             }
         });
 

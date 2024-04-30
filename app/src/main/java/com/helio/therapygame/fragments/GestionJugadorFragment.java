@@ -404,7 +404,8 @@ public class GestionJugadorFragment extends Fragment{
         progreso=new ProgressDialog(getContext());
         progreso.setMessage("Cargando...");
         progreso.show();
-        String url="http://192.168.0.113/TGwebService/actualizarJugador.php?id="+jugadorSeleccionado.getId()+"&nombre="+nickName+"&genero="+genero+"&avatar="+avatarId;
+        String ip=getString(R.string.ip);
+        String url=ip+"/TGwebService/actualizarJugador.php?id="+jugadorSeleccionado.getId()+"&nombre="+nickName+"&genero="+genero+"&avatar="+avatarId;
         url=url.replace(" ","%20");
 
         jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {

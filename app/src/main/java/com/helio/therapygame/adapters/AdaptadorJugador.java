@@ -44,9 +44,6 @@ public class AdaptadorJugador extends RecyclerView.Adapter<AdaptadorJugador.View
         }else{
             viewHolderJugador.txtGenero.setText("Femenino");
         }
-
-
-
     }
 
     @Override
@@ -56,7 +53,6 @@ public class AdaptadorJugador extends RecyclerView.Adapter<AdaptadorJugador.View
 
     public void setOnClickListener(View.OnClickListener listener){
         this.listener=listener;
-
     }
 
     @Override

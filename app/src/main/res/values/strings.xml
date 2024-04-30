@@ -33,9 +33,9 @@
     <string name="title_activity_contendor_instrucciones">ContendorInstruccionesActivity</string>
 
     <!-- ip lochalhost-->
-    <!--<string name="ip">http://192.168.0.113/</string> -->
+    <!--<string name="ip">http://192.168.1.47</string>-->
 
     <!-- ip lochalhost-->
-    <string name="ip">https://therapygame.000webhostapp.com</string>
+    <string name="ip">https://therapy-game.000webhostapp.com</string>
 
 </resources>

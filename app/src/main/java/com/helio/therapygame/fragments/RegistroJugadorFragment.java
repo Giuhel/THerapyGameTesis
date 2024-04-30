@@ -314,11 +314,16 @@ public class RegistroJugadorFragment extends Fragment {
                 JSONObject jsonObject=null;
                 try {
                     jsonObject=json.getJSONObject(0);
-                    miUsuario.setId(jsonObject.optInt("codigo"));
+                        miUsuario.setId(jsonObject.optInt("codigo"));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
                 codigo.setText(miUsuario.getId()+"");
+                if(codigo.getText().toString().equals("0")){
+                    codigo.setText("1");
+                }else{
+                    codigo.setText(miUsuario.getId()+"");
+                }
             }
         }, new Response.ErrorListener() {
             @Override

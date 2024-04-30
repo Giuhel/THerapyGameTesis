@@ -1,16 +1,18 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
     lintOptions {
         checkReleaseBuilds false
     }
 
-    compileSdkVersion 29
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId 'com.helio.therapygame'
-        minSdkVersion 16
-        targetSdkVersion 29
+        minSdkVersion 24
+        targetSdkVersion 33
         versionCode 2
         versionName "1.1"
 
@@ -50,5 +52,4 @@ dependencies {
     implementation "androidx.preference:preference-ktx:$preference_version"
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
 }

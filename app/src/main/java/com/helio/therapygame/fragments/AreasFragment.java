@@ -113,7 +113,7 @@ public class AreasFragment extends Fragment {
         BarraAtencion();
         BarraMemoria();
         BarraRazonamiento();
-        barraGeneral2();
+        BarraGeneral();
 
         btnAtras.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -264,9 +264,10 @@ public class AreasFragment extends Fragment {
         VolleySingleton.getIntanciaVolley(getContext()).addToRequestQueue(jsonObjectRequest);
     }
 
-    /*private void BarraGeneral() {
+    private void BarraGeneral() {
         int codigo=PreferenciasJuego.jugadorId;
-        String url2="http://192.168.0.113/TGwebService/barraGeneral.php?id="+codigo;
+        String ip=getString(R.string.ip);
+        String url2=ip+"/TGwebService/barraGeneral.php?id="+codigo;
 
         jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url2, null, new Response.Listener<JSONObject>() {
             @Override
@@ -290,7 +291,7 @@ public class AreasFragment extends Fragment {
             }
         });
         VolleySingleton.getIntanciaVolley(getContext()).addToRequestQueue(jsonObjectRequest);
-    }*/
+    }
 
     private void barraGeneral2(){
         handler.postDelayed(new Runnable() {
@@ -300,9 +301,11 @@ public class AreasFragment extends Fragment {
                 int m= Integer.parseInt(memoria.getText().toString());
                 int r= Integer.parseInt(razonamiento.getText().toString());
                 int  s=0;
-                s=(a+m+r)/3;
-                general.setText(s+"");
-                pbGeneral.setProgress(s);
+                if(a!=0&&m!=0&&r!=0){
+                    s=(a+m+r)/3;
+                    general.setText(s+"");
+                    pbGeneral.setProgress(s);
+                }
             }
         },800);
     }
