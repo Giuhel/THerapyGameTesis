@@ -303,6 +303,9 @@ public class RegistroJugadorFragment extends Fragment {
 
     //obtener codigo siguiente
     private void obtenercodigo() {
+        progreso=new ProgressDialog(getContext());
+        progreso.setMessage("Cargando...");
+        progreso.show();
         String ip=getString(R.string.ip);
         String url2=ip+"/TGwebService/codsiguiente.php";
 
@@ -324,6 +327,7 @@ public class RegistroJugadorFragment extends Fragment {
                 }else{
                     codigo.setText(miUsuario.getId()+"");
                 }
+                progreso.hide();
             }
         }, new Response.ErrorListener() {
             @Override
